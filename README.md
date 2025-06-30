@@ -1,4 +1,9 @@
 graph TD
-  A[Client] --> B[Server]
-  click A "https://example.com/client" "Tooltip for Client"
-  click B "https://example.com/server" "Tooltip for Server"
+  A[Client] -->|HTTP Request| B[Server]
+  B -->|Fetch data| C[Database]
+  C -->|Data| B
+  B -->|HTTP Response| A
+
+  click A "https://example.com/client" "Go to Client page"
+  click B "https://example.com/server" "Go to Server page"
+  click C "https://example.com/database" "Go to Database docs"
