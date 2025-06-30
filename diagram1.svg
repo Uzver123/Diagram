@@ -1,0 +1,42 @@
+<svg width="640" height="200" 
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Playground - https://svgplayground.com-->
+ <g class="layer">
+  <title>Layer 1</title>
+
+  <!-- Box 1 -->
+  <a xlink:href="https://github.com" target="_blank">
+    <rect x="20" y="50" width="150" height="60" fill="#87CEEB" stroke="#000" stroke-width="2"/>
+    <text x="65" y="90" font-family="Arial" font-size="18" fill="#000">Box 1</text>
+  </a>
+
+  <!-- Arrow from Box 1 to Box 2 -->
+  <line x1="170" y1="80" x2="230" y2="80" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Box 2 -->
+  <a xlink:href="https://github.com" target="_blank">
+    <rect x="230" y="50" width="150" height="60" fill="#90EE90" stroke="#000" stroke-width="2"/>
+    <text x="275" y="90" font-family="Arial" font-size="18" fill="#000">Box 2</text>
+  </a>
+
+  <!-- Arrow from Box 2 to Box 3 -->
+  <line x1="380" y1="80" x2="440" y2="80" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Box 3 -->
+  <a xlink:href="https://github.com" target="_blank">
+    <rect x="440" y="50" width="150" height="60" fill="#FFA07A" stroke="#000" stroke-width="2"/>
+    <text x="485" y="90" font-family="Arial" font-size="18" fill="#000">Box 3</text>
+  </a>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+
+ </g>
+</svg>
