@@ -1,8 +1,3 @@
-# Project Architecture
-
-This diagram shows the interaction between client, server, and database.
-
-```mermaid
 graph TD
   A[Client] -->|HTTP Request| B[Server]
   B -->|Fetch data| C[Database]
