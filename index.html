@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Interactive Diagram</title>
+</head>
+<body>
+
+<h1>My Interactive Diagram</h1>
+
+<!-- Inline SVG example with clickable links -->
+<svg width="640" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+
+  <a xlink:href="https://github.com" target="_blank">
+    <rect x="20" y="50" width="150" height="60" fill="#87CEEB" stroke="#000" stroke-width="2"/>
+    <text x="65" y="90" font-family="Arial" font-size="18" fill="#000">Box 1</text>
+  </a>
+
+  <line x1="170" y1="80" x2="230" y2="80" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <a xlink:href="https://github.com" target="_blank">
+    <rect x="230" y="50" width="150" height="60" fill="#90EE90" stroke="#000" stroke-width="2"/>
+    <text x="275" y="90" font-family="Arial" font-size="18" fill="#000">Box 2</text>
+  </a>
+
+  <line x1="380" y1="80" x2="440" y2="80" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <a xlink:href="https://github.com" target="_blank">
+    <rect x="440" y="50" width="150" height="60" fill="#FFA07A" stroke="#000" stroke-width="2"/>
+    <text x="485" y="90" font-family="Arial" font-size="18" fill="#000">Box 3</text>
+  </a>
+</svg>
+
+</body>
+</html>
